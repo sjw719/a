@@ -43,13 +43,13 @@ $\frac{\pi}{2} = \prod_{k=1}^{\infty} \frac{(2k)^2}{(2k-1)(2k+1)} = \frac{2 \cdo
 ## 二、第一节：沃利斯乘积与 $\pi$ 的离散涌现
 ### 2.1 沃利斯乘积的收敛
 **定义 2.1**（沃利斯部分积）：对 $N \in \mathbb{N}^+$，定义
-$$P_N = \prod_{k=1}^{N} \frac{(2k)^2}{(2k-1)(2k+1)}$$
+$P_N = \prod_{k=1}^{N} \frac{(2k)^2}{(2k-1)(2k+1)}$
 
 **定理 2.1**（沃利斯, 1655）：
-$$\lim_{N \to \infty} P_N = \frac{\pi}{2}$$
+$\lim_{N \to \infty} P_N = \frac{\pi}{2}$
 
 **证明概要**：通过对 $\int_0^{\pi/2} \sin^n x \, dx$ 的奇偶分支分析，构造不等式并应用夹逼准则，可得 Wallis 不等式：
-$$\frac{1}{\sqrt{\pi(N+1/2)}} < \frac{\pi}{2} - P_N < \frac{1}{\sqrt{\pi N}}$$
+$\frac{1}{\sqrt{\pi(N+1/2)}} < \frac{\pi}{2} - P_N < \frac{1}{\sqrt{\pi N}}$
 
 ### 2.2 数值收敛验证
 下表展示部分积的收敛过程：
@@ -68,10 +68,10 @@ $$\frac{1}{\sqrt{\pi(N+1/2)}} < \frac{\pi}{2} - P_N < \frac{1}{\sqrt{\pi N}}$$
 
 ### 2.3 $\pi$ 作为拓扑涌现的结论
 在11T‑Matrix中，**不允许真正的无穷级数**——宇宙视界只有 $\mathcal{N}_{\text{topo}} \sim 10^{61}$ 个拓扑步。因此沃利斯乘积在 $N = \mathcal{N}_{\text{topo}}$ 处**自然截断**：
-$$P_{\mathcal{N}_{\text{topo}}} = \prod_{k=1}^{\mathcal{N}_{\text{topo}}} \frac{(2k)^2}{(2k-1)(2k+1)}$$
+$P_{\mathcal{N}_{\text{topo}}} = \prod_{k=1}^{\mathcal{N}_{\text{topo}}} \frac{(2k)^2}{(2k-1)(2k+1)}$
 
 **推论1（$\pi$ 的涌现精度）**：
-$$\left| \frac{\pi}{2} - P_{\mathcal{N}_{\text{topo}}} \right| \sim \frac{1}{\mathcal{N}_{\text{topo}}} \sim 10^{-61}$$
+$\left| \frac{\pi}{2} - P_{\mathcal{N}_{\text{topo}}} \right| \sim \frac{1}{\mathcal{N}_{\text{topo}}} \sim 10^{-61}$
 
 **物理意义**：超越数 $\pi$ 在本宇宙中的可观测精度被拓扑步总数锁死。小数点后第61位之后的数字属于纯数学幻想，无物理对应物——因为宇宙没有第 $\mathcal{N}_{\text{topo}}+1$ 个拓扑步来定义它们。
 
@@ -101,9 +101,9 @@ $I_{\text{disc}}(W) = \sum_{j=0}^{\mathcal{N}_{\text{topo}}-1} \sin^W(j \cdot \D
 连续积分与离散和的差，就是 $\pi$ 的逼近误差。通过 Euler‑Maclaurin 展开，可得领头阶：
 
 **定理 3.1**（离散化误差）：
-$$
+$
 I_{\text{disc}}(W) = I_{\text{cont}}(W) \cdot \left[ 1 + \frac{\pi^2}{24} \cdot \frac{W}{\mathcal{N}_{\text{topo}}^2} \cdot (-1)^W + \mathcal{O}\left(\frac{1}{\mathcal{N}_{\text{topo}}^3}\right) \right]
-$$
+$
 其中 $I_{\text{cont}}(W) = \sqrt{\pi/(2W)}$ 为连续极限。
 
 **证明概要**：$\sin^W\theta$ 在 $\theta = \pi/2$ 处的半高全宽 $\delta\theta_{\text{peak}} \sim 1/\sqrt{W}$。当 $W \sim \mathcal{N}_{\text{topo}}$ 时，峰宽远大于步长 $\Delta\theta \sim 1/\mathcal{N}_{\text{topo}}$，但峰顶可能落在两格点之间，导致奇偶分支的采样差异。此差异的领头阶由 $(-1)^W$ 捕获。
@@ -111,19 +111,13 @@ $$
 ## 四、第三节：费米‑玻色对称恢复与残余破缺
 ### 4.1 对称恢复的极限
 **定义 4.1**（分支比值）：
-$$
-R(W) = \frac{I_{\text{disc}}(W+1)}{I_{\text{disc}}(W)}
-$$
+$R(W) = \frac{I_{\text{disc}}(W+1)}{I_{\text{disc}}(W)}$
 
 **定理 4.1**（对称恢复与残余破缺）：在 $W \to \mathcal{N}_{\text{topo}}$ 的极限下，
-$$
-R(W) = 1 + \epsilon(W), \quad \epsilon(W) = \frac{\pi^2}{24} \cdot \frac{W}{\mathcal{N}_{\text{topo}}^2} \cdot (-1)^W + \mathcal{O}\left(\frac{1}{\mathcal{N}_{\text{topo}}^3}\right)
-$$
+$R(W) = 1 + \epsilon(W), \quad \epsilon(W) = \frac{\pi^2}{24} \cdot \frac{W}{\mathcal{N}_{\text{topo}}^2} \cdot (-1)^W + \mathcal{O}\left(\frac{1}{\mathcal{N}_{\text{topo}}^3}\right)$
 
 在 $W = \mathcal{N}_{\text{topo}}$ 时：
-$$
-|\epsilon_{\max}| = \frac{\pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \approx 4.11 \times 10^{-62} \sim 10^{-61}
-$$
+$|\epsilon_{\max}| = \frac{\pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \approx 4.11 \times 10^{-62} \sim 10^{-61}$
 
 ### 4.2 奇偶振荡的物理含义
 
@@ -148,33 +142,22 @@ $$
 ## 五、第四节：质量分裂推论
 ### 5.1 从拓扑误差到惯性质量
 在文章18的质量生成方程 $m_f = E_{\text{struct}} / c^2$ 中，体积压制因子 $\mathcal{V}^{-p}$ 的几何本源是拓扑闭合回路在 $\mathcal{M}_7$ 中的"填充效率"。离散化误差 $\epsilon(W)$ 直接反映在这个效率上：
-$$
-\mathcal{V}_{\text{disc}}^{-p} = \mathcal{V}_0^{-p} \cdot \left[ 1 + \gamma \cdot \epsilon(W) \right]
-$$
+$\mathcal{V}_{\text{disc}}^{-p} = \mathcal{V}_0^{-p} \cdot \left[ 1 + \gamma \cdot \epsilon(W) \right]$
 其中 $\gamma \sim \mathcal{O}(1)$ 为由 $\mathcal{M}_7$ 拓扑决定的几何因子。
 
 ### 5.2 结构层与表象层的分离
 **推论3（质量分裂）**：费米子与玻色子的本征能量和质量分别为：
-$$
-E_{\text{struct}}^{\text{(fermion)}} = E_0 \left( 1 - \frac{\gamma \pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \right)
-$$
-$$
-E_{\text{struct}}^{\text{(boson)}} = E_0 \left( 1 + \frac{\gamma \pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \right)
-$$
+$E_{\text{struct}}^{\text{(fermion)}} = E_0 \left( 1 - \frac{\gamma \pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \right)
+$
+$E_{\text{struct}}^{\text{(boson)}} = E_0 \left( 1 + \frac{\gamma \pi^2}{24} \cdot \frac{1}{\mathcal{N}_{\text{topo}}} \right)$
 
 通过介质阻抗 $1/c^2$ 转化为惯性质量：
-$$
-m = \frac{E_{\text{struct}}}{c^2}
-$$
+$m = \frac{E_{\text{struct}}}{c^2}$
 
 ### 5.3 数值验证
 取 $\Lambda_{\text{UV}} = 4.3 \times 10^{16}$ GeV，$\gamma = 1$：
-$$
-\Delta E_{\text{struct}} = 2\gamma \cdot \frac{\pi^2}{24} \cdot \frac{\Lambda_{\text{UV}}}{\mathcal{N}_{\text{topo}}} = 2 \times \frac{\pi^2}{24} \times \frac{4.3 \times 10^{16}}{10^{61}}
-$$
-$$
-\boxed{\Delta E_{\text{struct}} \approx 3.54 \times 10^{-45} \text{ GeV}}
-$$
+$\Delta E_{\text{struct}} = 2\gamma \cdot \frac{\pi^2}{24} \cdot \frac{\Lambda_{\text{UV}}}{\mathcal{N}_{\text{topo}}} = 2 \times \frac{\pi^2}{24} \times \frac{4.3 \times 10^{16}}{10^{61}}$
+$\boxed{\Delta E_{\text{struct}} \approx 3.54 \times 10^{-45} \text{ GeV}}$
 
 **层级对比**：
 
@@ -191,16 +174,14 @@ $$
 ## 六、第五节：深空幸存与循环守恒
 ### 6.1 深空极限下的层级行为
 根据文章18，在深空绝对真空态（$c \to \infty$）下：
-$$
-\lim_{c \to \infty} m_f = \lim_{c \to \infty} \frac{E_{\text{struct}}}{c^2} = 0 \quad \text{（质量消失）}
-$$
+$\lim_{c \to \infty} m_f = \lim_{c \to \infty} \frac{E_{\text{struct}}}{c^2} = 0 \quad \text{（质量消失）}$
 
 但结构项 $E_{\text{struct}}$ 含的拓扑修正 $\epsilon(W)$ **与 $c$ 无关**——它属于根域 $\mathcal{M}_7$ 的纯几何属性。
 
 **推论4a（深空幸存）**：
-$$
+$
 \lim_{c \to \infty} \Delta E_{\text{struct}} = 2\gamma \cdot \frac{\pi^2}{24} \cdot \frac{\Lambda_{\text{UV}}}{\mathcal{N}_{\text{topo}}} \cdot \frac{W}{\mathcal{N}_{\text{topo}}} \cdot (-1)^W \neq 0
-$$
+$
 
 **物理意义**：即使物质完全蒸发、惯性彻底归零，真空本身仍带有离散拓扑的"纹理记忆"。这个 $\sim 10^{-61}$ 的费米‑玻色不对称性，是宇宙的永久胎记。
 
@@ -213,14 +194,14 @@ $$
 - **$(-1)^W$ 振荡模式** → **幸存（拓扑分类不变）**
 
 **推论4b（循环守恒）**：
-$$
+$
 \Delta E_{\text{struct}}^{\text{(cycle } n+1\text{)}} = \Delta E_{\text{struct}}^{\text{(cycle } n\text{)}}
-$$
+$
 
 **证明**：在核心解离阶段，视界坍缩使 $\mathcal{N}_{\text{topo}} \to \mathcal{N}_{\text{topo}}'$，同时极化容量上限 $\Lambda_{\text{UV}} \to \Lambda_{\text{UV}}'$。由于两者均与拓扑容量线性相关：
-$$
+$
 \frac{\Lambda_{\text{UV}}'}{\mathcal{N}_{\text{topo}}'} = \frac{\Lambda_{\text{UV}}}{\mathcal{N}_{\text{topo}}} = \text{常数}
-$$
+$
 因此 $\Delta E_{\text{struct}} \sim \Lambda_{\text{UV}} / \mathcal{N}_{\text{topo}}$ 在循环中严格守恒。
 
 ### 6.3 对"人择原理"的降维打击
