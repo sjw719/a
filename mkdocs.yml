@@ -1,5 +1,5 @@
 site_name: 11时序矩阵本体论
-site_url: !ENV [SITE_URL, 'https://hunts.351112.xyz/a/']
+site_url: !ENV [SITE_URL, 'https://sjw719.github.io/a/']
 site_author: 史建威
 site_language: zh
 # Repository
