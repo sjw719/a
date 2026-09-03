@@ -1,7 +1,6 @@
 site_name: 11时序矩阵本体论
 site_url: !ENV [SITE_URL, 'https://hunts.351112.xyz']
 site_author: 史建威
-site_language: zh
 # Repository
 repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/template-mkdocs-material/']
 repo_name: !ENV [REPO_NAME, 'sosiristseng/template-mkdocs-material']
@@ -41,6 +40,7 @@ plugins:
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 theme:
   name: material
+  language: zh
   custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
