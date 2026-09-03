@@ -1,36 +1,20 @@
 ---
-title: Welcome to MkDocs
+title: 11时序矩阵本体论
 tags:
-  - test
+  - 首页
 ---
 
-Roamlink: [[about]] yourself.
+欢迎来到 **11时序矩阵本体论** 站点。
 
-For full documentation visit [mkdocs](https://www.mkdocs.org) and [MkDocs Material theme](https://squidfunk.github.io/mkdocs-material/) websites.
+这里记录本体论体系研究、EPD系列工程攻坚文档、星系旋转曲线拟合P10工程、理论推导笔记与资料归档。
 
-## Commands
+## 导航入口
+- 📝 [博客文章](/blog/)：研究随笔、工程进展、推导记录
+- ℹ️ [关于](/about/)：作者、研究背景与体系说明
 
-+ `mkdocs new [dir-name]` - Create a new project.
-+ `mkdocs serve` - Start the live-reloading docs server.
-+ `mkdocs build` - Build the documentation site.
-+ `mkdocs -h` - Print help message and exit.
+## 站点说明
+本站点基于 MkDocs‑Material 构建，支持 MathJax 数学公式，行内公式使用 `$...$` 书写。
 
-## Project layout
+> 所有理论文档均为持续迭代版本，内容会不断修订更新。
 
-```
-.github/        # Github actions
-    ...
-mkdocs.yml      # The configuration file.
-docs/
-    index.md    # The documentation homepage.
-    ...         # Other markdown pages, images and other files.
-    blog/       # Blog folder
-        posts/  # Blog posts folder
-includes/
-     examples.md # The files to be included in other files in `docs/`
-     ...
-```
-
-## Tags
-
-[TAGS]
+## 目录简要
