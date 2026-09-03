@@ -1,7 +1,7 @@
 site_name: 11时序矩阵本体论
 site_url: !ENV [SITE_URL, 'https://sosiristseng.github.io/template-mkdocs-material/']
 site_author: 史建威
-
+site_language: zh
 # Repository
 repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/template-mkdocs-material/']
 repo_name: !ENV [REPO_NAME, 'sosiristseng/template-mkdocs-material']
