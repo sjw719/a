@@ -46,14 +46,10 @@ $\frac{\pi}{2} = \prod_{k=1}^{\infty} \frac{(2k)^2}{(2k-1)(2k+1)} = \frac{2 \cdo
 $$P_N = \prod_{k=1}^{N} \frac{(2k)^2}{(2k-1)(2k+1)}$$
 
 **定理 2.1**（沃利斯, 1655）：
-$$
-\lim_{N \to \infty} P_N = \frac{\pi}{2}
-$$
+$$\lim_{N \to \infty} P_N = \frac{\pi}{2}$$
 
 **证明概要**：通过对 $\int_0^{\pi/2} \sin^n x \, dx$ 的奇偶分支分析，构造不等式并应用夹逼准则，可得 Wallis 不等式：
-$$
-\frac{1}{\sqrt{\pi(N+1/2)}} < \frac{\pi}{2} - P_N < \frac{1}{\sqrt{\pi N}}
-$$
+$$\frac{1}{\sqrt{\pi(N+1/2)}} < \frac{\pi}{2} - P_N < \frac{1}{\sqrt{\pi N}}$$
 
 ### 2.2 数值收敛验证
 下表展示部分积的收敛过程：
@@ -72,14 +68,10 @@ $$
 
 ### 2.3 $\pi$ 作为拓扑涌现的结论
 在11T‑Matrix中，**不允许真正的无穷级数**——宇宙视界只有 $\mathcal{N}_{\text{topo}} \sim 10^{61}$ 个拓扑步。因此沃利斯乘积在 $N = \mathcal{N}_{\text{topo}}$ 处**自然截断**：
-$$
-P_{\mathcal{N}_{\text{topo}}} = \prod_{k=1}^{\mathcal{N}_{\text{topo}}} \frac{(2k)^2}{(2k-1)(2k+1)}
-$$
+$$P_{\mathcal{N}_{\text{topo}}} = \prod_{k=1}^{\mathcal{N}_{\text{topo}}} \frac{(2k)^2}{(2k-1)(2k+1)}$$
 
 **推论1（$\pi$ 的涌现精度）**：
-$$
-\left| \frac{\pi}{2} - P_{\mathcal{N}_{\text{topo}}} \right| \sim \frac{1}{\mathcal{N}_{\text{topo}}} \sim 10^{-61}
-$$
+$$\left| \frac{\pi}{2} - P_{\mathcal{N}_{\text{topo}}} \right| \sim \frac{1}{\mathcal{N}_{\text{topo}}} \sim 10^{-61}$$
 
 **物理意义**：超越数 $\pi$ 在本宇宙中的可观测精度被拓扑步总数锁死。小数点后第61位之后的数字属于纯数学幻想，无物理对应物——因为宇宙没有第 $\mathcal{N}_{\text{topo}}+1$ 个拓扑步来定义它们。
 
@@ -88,15 +80,11 @@ $$
 沃利斯乘积的推导核心是积分 $I_n = \int_0^{\pi/2} \sin^n x \, dx$。在连续情形下，$x$ 是平滑变化的实数。但在根域中，**不存在连续的相位角**——$\theta$ 只能以最小量子化步长"逐帧"跳变。
 
 **定义 3.1**（离散化步长）：设全域拓扑步总数为 $\mathcal{N}_{\text{topo}}$，定义
-$$
-\Delta\theta = \frac{\pi/2}{\mathcal{N}_{\text{topo}}}
-$$
+$\Delta\theta = \frac{\pi/2}{\mathcal{N}_{\text{topo}}}$
 这是 $\theta$ 在 $[0, \pi/2]$ 上的最小可分辨步长，由宇宙视界周长被切割为 $\mathcal{N}_{\text{topo}}$ 份的几何必然性决定。
 
 **定义 3.2**（离散沃利斯和）：对时序缠绕数 $W \in \mathbb{Z}^+$，定义
-$$
-I_{\text{disc}}(W) = \sum_{j=0}^{\mathcal{N}_{\text{topo}}-1} \sin^W(j \cdot \Delta\theta) \cdot \Delta\theta
-$$
+$I_{\text{disc}}(W) = \sum_{j=0}^{\mathcal{N}_{\text{topo}}-1} \sin^W(j \cdot \Delta\theta) \cdot \Delta\theta$
 其中 $\theta_j = j \cdot \Delta\theta$。
 
 **映射关系**：
